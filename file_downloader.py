@@ -1,5 +1,4 @@
 import requests
-import json
 
 url = "https://raw.githubusercontent.com/5e-bits/5e-database/main/src/5e-SRD-"
 suffix = ".json"
@@ -8,7 +7,8 @@ files = ["Ability-Scores","Alignments","Backgrounds","Classes","Conditions","Dam
 
 for file in files:
     print(file)
-    data = requests.get(f"{url}{file}{suffix}").json()
+    data = requests.get(f"{url}{file}{suffix}")
+    data.encoding = 'cp1252'
 
     with open(f"data/{file}{suffix}", "w") as out:
-        json.dump(data, out, indent = 2)
+        out.write(data.text)
