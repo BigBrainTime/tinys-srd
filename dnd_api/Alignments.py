@@ -1,56 +1,12 @@
-entries = ['chaotic_evil', 'chaotic_good', 'chaotic_neutral', 'lawful_evil', 'lawful_good', 'lawful_neutral', 'neutral_evil', 'neutral_good', 'neutral']
+from . import entry_builder
+entries = ['lawful_good', 'neutral_good', 'chaotic_good', 'lawful_neutral', 'neutral', 'chaotic_neutral', 'lawful_evil', 'neutral_evil', 'chaotic_evil']
 attributes = ['index', 'name', 'abbreviation', 'desc', 'url']
-class chaotic_evil():
-    index = 'chaotic-evil'
-    name = 'Chaotic Evil'
-    abbreviation = 'CE'
-    desc = 'Chaotic evil (CE) creatures act with arbitrary violence, spurred by their greed, hatred, or bloodlust. Demons, red dragons, and orcs are chaotic evil.'
-    url = '/api/alignments/chaotic-evil'
-class chaotic_good():
-    index = 'chaotic-good'
-    name = 'Chaotic Good'
-    abbreviation = 'CG'
-    desc = 'Chaotic good (CG) creatures act as their conscience directs, with little regard for what others expect. Copper dragons, many elves, and unicorns are chaotic good.'
-    url = '/api/alignments/chaotic-good'
-class chaotic_neutral():
-    index = 'chaotic-neutral'
-    name = 'Chaotic Neutral'
-    abbreviation = 'CN'
-    desc = 'Chaotic neutral (CN) creatures follow their whims, holding their personal freedom above all else. Many barbarians and rogues, and some bards, are chaotic neutral.'
-    url = '/api/alignments/chaotic-neutral'
-class lawful_evil():
-    index = 'lawful-evil'
-    name = 'Lawful Evil'
-    abbreviation = 'LE'
-    desc = 'Lawful evil (LE) creatures methodically take what they want, within the limits of a code of tradition, loyalty, or order. Devils, blue dragons, and hobgoblins are lawful evil.'
-    url = '/api/alignments/lawful-evil'
-class lawful_good():
-    index = 'lawful-good'
-    name = 'Lawful Good'
-    abbreviation = 'LG'
-    desc = 'Lawful good (LG) creatures can be counted on to do the right thing as expected by society. Gold dragons, paladins, and most dwarves are lawful good.'
-    url = '/api/alignments/lawful-good'
-class lawful_neutral():
-    index = 'lawful-neutral'
-    name = 'Lawful Neutral'
-    abbreviation = 'LN'
-    desc = 'Lawful neutral (LN) individuals act in accordance with law, tradition, or personal codes. Many monks and some wizards are lawful neutral.'
-    url = '/api/alignments/lawful-neutral'
-class neutral_evil():
-    index = 'neutral-evil'
-    name = 'Neutral Evil'
-    abbreviation = 'NE'
-    desc = 'Neutral evil (NE) is the alignment of those who do whatever they can get away with, without compassion or qualms. Many drow, some cloud giants, and goblins are neutral evil.'
-    url = '/api/alignments/neutral-evil'
-class neutral_good():
-    index = 'neutral-good'
-    name = 'Neutral Good'
-    abbreviation = 'NG'
-    desc = 'Neutral good (NG) folk do the best they can to help others according to their needs. Many celestials, some cloud giants, and most gnomes are neutral good.'
-    url = '/api/alignments/neutral-good'
-class neutral():
-    index = 'neutral'
-    name = 'Neutral'
-    abbreviation = 'N'
-    desc = 'Neutral (N) is the alignment of those who prefer to steer clear of moral questions and don\'t take sides, doing what seems best at the time. Lizardfolk, most druids, and many humans are neutral.'
-    url = '/api/alignments/neutral'
+lawful_good = entry_builder.entry_builder(index = 'lawful-good',name = 'Lawful Good',abbreviation = 'LG',desc = 'Lawful good (LG) creatures can be counted on to do the right thing as expected by society. Gold dragons, paladins, and most dwarves are lawful good.',url = '/api/alignments/lawful-good')
+neutral_good = entry_builder.entry_builder(index = 'neutral-good',name = 'Neutral Good',abbreviation = 'NG',desc = 'Neutral good (NG) folk do the best they can to help others according to their needs. Many celestials, some cloud giants, and most gnomes are neutral good.',url = '/api/alignments/neutral-good')
+chaotic_good = entry_builder.entry_builder(index = 'chaotic-good',name = 'Chaotic Good',abbreviation = 'CG',desc = 'Chaotic good (CG) creatures act as their conscience directs, with little regard for what others expect. Copper dragons, many elves, and unicorns are chaotic good.',url = '/api/alignments/chaotic-good')
+lawful_neutral = entry_builder.entry_builder(index = 'lawful-neutral',name = 'Lawful Neutral',abbreviation = 'LN',desc = 'Lawful neutral (LN) individuals act in accordance with law, tradition, or personal codes. Many monks and some wizards are lawful neutral.',url = '/api/alignments/lawful-neutral')
+neutral = entry_builder.entry_builder(index = 'neutral',name = 'Neutral',abbreviation = 'N',desc = 'Neutral (N) is the alignment of those who prefer to steer clear of moral questions and don\'t take sides, doing what seems best at the time. Lizardfolk, most druids, and many humans are neutral.',url = '/api/alignments/neutral')
+chaotic_neutral = entry_builder.entry_builder(index = 'chaotic-neutral',name = 'Chaotic Neutral',abbreviation = 'CN',desc = 'Chaotic neutral (CN) creatures follow their whims, holding their personal freedom above all else. Many barbarians and rogues, and some bards, are chaotic neutral.',url = '/api/alignments/chaotic-neutral')
+lawful_evil = entry_builder.entry_builder(index = 'lawful-evil',name = 'Lawful Evil',abbreviation = 'LE',desc = 'Lawful evil (LE) creatures methodically take what they want, within the limits of a code of tradition, loyalty, or order. Devils, blue dragons, and hobgoblins are lawful evil.',url = '/api/alignments/lawful-evil')
+neutral_evil = entry_builder.entry_builder(index = 'neutral-evil',name = 'Neutral Evil',abbreviation = 'NE',desc = 'Neutral evil (NE) is the alignment of those who do whatever they can get away with, without compassion or qualms. Many drow, some cloud giants, and goblins are neutral evil.',url = '/api/alignments/neutral-evil')
+chaotic_evil = entry_builder.entry_builder(index = 'chaotic-evil',name = 'Chaotic Evil',abbreviation = 'CE',desc = 'Chaotic evil (CE) creatures act with arbitrary violence, spurred by their greed, hatred, or bloodlust. Demons, red dragons, and orcs are chaotic evil.',url = '/api/alignments/chaotic-evil')
