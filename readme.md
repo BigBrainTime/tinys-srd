@@ -50,7 +50,7 @@ The library provides access to the following data:
 - Subclasses
 - Subraces
 - Traits
-- WeaponProperti
+- WeaponProperties
 
 <https://github.com/5e-bits> is where all this data originates
 
