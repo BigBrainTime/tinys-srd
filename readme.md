@@ -24,31 +24,31 @@ print(Equipment.battleaxe.damage)
 
 The library provides access to the following data:
 
-AbilityScores,
-Alignments,
-Backgrounds,
-Classes,
-Conditions,
-DamageTypes,
-EquipmentCategories,
-Equipment,
-Feats,
-Features,
-Languages,
-Levels,
-MagicItems,
-MagicSchools,
-Monsters,
-Proficiencies,
-Races,
-RuleSections,
-Rules,
-Skills,
-Spells,
-Subclasses,
-Subraces,
-Traits,
-WeaponProperti,
+- AbilityScores
+- Alignments
+- Backgrounds
+- Classes
+- Conditions
+- DamageTypes
+- EquipmentCategories
+- Equipment
+- Feats
+- Features
+- Languages
+- Levels
+- MagicItems
+- MagicSchools
+- Monsters
+- Proficiencies
+- Races
+- RuleSections
+- Rules
+- Skills
+- Spells
+- Subclasses
+- Subraces
+- Traits
+- WeaponProperti
 
 <https://github.com/5e-bits> is where all this data originates
 
