@@ -1,3 +1,3 @@
-from dnd_api import AbilityScores, Equipment
+from src.tinys_srd import AbilityScores, Equipment
 
-print(Equipment.battleaxe)
+print(Equipment.battleaxe.damage)
