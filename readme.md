@@ -54,7 +54,7 @@ The library provides access to the following data:
 
 ## Adding New Classes
 
-To add a new class to the dataset, you can use the `entry_builder` class. Here's an example of how to use it, based on the implementation in `AbilityScores.py`:
+To add a new class to the dataset, you can use the `entry_builder` class. Here's an example of how to use it:
 
 ```py
 from tinys_srd import entry_builder
