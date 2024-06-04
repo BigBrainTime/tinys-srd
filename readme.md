@@ -1,6 +1,8 @@
 # Tinys SRD
 
-This is a Python library for accessing data from the SRD. It provides access to information about ability scores, equipment, and other game elements.
+This is a Python library for accessing data from the D&D SRD. It provides access to information about ability scores, equipment, and other game elements.
+
+This library provides access to the SRD in local way with no API calls. This means that the library can be used offline.
 
 ## Usage
 
